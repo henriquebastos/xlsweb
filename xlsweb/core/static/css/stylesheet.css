@@ -1,1 +1,50 @@
+body{
+ font-family: 'Open-Sans';
+}
+.box {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    margin: 0px;
+    ;
+}
 
+.box::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: url("/static/img/bg.jpg");
+    background-size: cover;
+    content: "";
+    z-index:-1;
+    opacity: 1;
+}
+
+.box::after{
+    content: "";
+
+}
+
+h1{
+    font-family: 'Open-Sans';
+    font-size: 3rem!important;
+    color: white;
+    margin-bottom: 25px!important;
+}
+
+.lefty {
+    position: absolute;
+    left: 30%;
+    top: 50%;
+    -webkit-transform: translate(-33%, -50%);
+    transform: translate(-33%, -50%);
+}
+.card{
+    box-shadow: 5px 6px 18px 3px #666;
+}
+
+.col-6{
+    padding: 0px!important;
+}
