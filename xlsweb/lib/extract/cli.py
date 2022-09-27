@@ -9,4 +9,4 @@ def cli():
 
     spreadsheet = Spreadsheet.from_xls(filename, Viewport('B3:E13'))
 
-    print(str(spreadsheet))
+    print(spreadsheet)
